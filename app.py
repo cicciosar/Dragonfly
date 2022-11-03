@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 #import plotly.express as px
 
 DATA_BALANCESHEET = "balance_sheet.csv"
@@ -34,5 +35,6 @@ st.latex(r'''
 
 df_balancesheet = pd.read_csv(DATA_BALANCESHEET, sep = ';')
 df_balancesheet_cleaned= clean_balancesheet(df_balancesheet)
+df_balancesheet_cleaned_notnull = df_balancesheet_cleaned.style.highlight_null(props="color: transparent;")
 st.dataframe(df_balancesheet_cleaned)
 #https://cicciosar-dragonfly-app-z8xeob.streamlitapp.com
