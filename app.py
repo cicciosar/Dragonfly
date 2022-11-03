@@ -15,18 +15,9 @@ def clean_balancesheet(df):
 
 
 
-
-    # checking datatype of each columns
-
-
-
-
 # DASHBOARD
 st.title("BALANCE SHEET BASED MODEL FOR CREDIT RISK")
 st.write("The model allows to compute the default boundary level based on book value quantities. It is able to link the Credit Risk Literatute with the Financial Statement Analysis.")
-
-
-
 
 st.write("Mathematically speaking, we introduce in the call payoff defining the value of the Equity with the presence of the liquidity shortage, the stochastic liquidity process and the stochastic debt process.")
 st.latex(r'''
