@@ -6,6 +6,20 @@ DATA_BALANCESHEET = "balance_sheet.csv"
 
 #ENDER_COLS = ["INDUSTRY CODE DESC", "ANNUAL REVENUE DEDUCTION FACTOR"]
 
+#Function to clean the balance sheet from na values
+def clean_balancesheet(df):
+    for i in df.columns:
+        df[i].replace(['n.d.'],None,)
+    return df
+
+
+
+
+    # checking datatype of each columns
+
+
+
+
 # DASHBOARD
 st.title("BALANCE SHEET BASED MODEL FOR CREDIT RISK")
 st.write("The model allows to compute the default boundary level based on book value quantities. It is able to link the Credit Risk Literatute with the Financial Statement Analysis.")
@@ -18,5 +32,7 @@ st.latex(r'''
     A_{n}=f(A_{n-1},c_{n})
     ''')
 
-df_balancesheet = pd.read_csv(DATA_BALANCESHEET)
+df_balancesheet = pd.read_csv(DATA_BALANCESHEET, sep = ';')
+df_balancesheet_cleaned= clean_balancesheet(df_balancesheet)
+st.dataframe(df_balancesheet_cleaned)
 #https://cicciosar-dragonfly-app-z8xeob.streamlitapp.com
