@@ -21,6 +21,8 @@ st.write("The model allows to compute the default boundary level based on book v
 
 st.write("Mathematically speaking, we introduce in the call payoff defining the value of the Equity with the presence of the liquidity shortage, the stochastic liquidity process and the stochastic debt process.")
 st.latex(r'''
+
+    \begin{document}
     \begin{equation}
     A_{n}=f(A_{n-1},c_{n}
     \end{equation}
@@ -30,8 +32,9 @@ st.latex(r'''
      N     & \sim    &  number of waves \\
      S_{d} & \propto & damage level
     \end{conditions}
-
+    \end{document}
     ''')
+
 
 df_balancesheet = pd.read_csv(DATA_BALANCESHEET, sep = ';')
 df_balancesheet_cleaned= clean_balancesheet(df_balancesheet)
