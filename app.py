@@ -31,6 +31,7 @@ where:
 """)
 st.latex(r'''
 \left\{\begin{matrix}
+\begin{align*}
 L_{n} = L_{n-1} +\bar{n}_{n}\cdot (T_{n-1}+Z_{n})-\gamma_{n}\cdot K_{n-1}+\bar{\omega }_{n}\cdot (D_{n-1}-G_{n})+d_{n}\cdot B_{n-1}+E_{n}+X_{n}  &  &  &  &  & \\
 T_{n}= (1-\bar{n}_{n})\cdot (T_{n-1}+Z_{n})&  &  &  &  & \\ 
 R_{n}= \phi_{n}\cdot R_{n-1}+\Delta Q_{n}\cdot V_{n} &  &  &  &  & \\
@@ -38,6 +39,7 @@ K_{n}=(1+\gamma_{n}) \cdot K_{n-1} - A_{n}&  &  &  & & \\
 D_{n}=(1-\bar{\omega }_{n})\cdot(D_{n-1}-G_{n}) &  &  &  &  & \\ 
 B_{n}=B_{n-1}-E_{n}
 &  &  &  &  & 
+\end{align}
 \end{matrix}\right.
 ''')
 
