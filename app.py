@@ -40,7 +40,15 @@ B_{n}=B_{n-1}-E_{n}
 &  &  &  &  & 
 \end{matrix}\right.
 ''')
-
+st.write(r"""
+where:
+- Ln = Cash and Cash equivalence;
+- Tn = Trade receivables;
+- Rn = Inventories;
+- Kn = Property, Plan and Equipment;
+- Dn = Trade and other payables;
+- Bn = Long term Borrowings.
+""")
 df_balancesheet = pd.read_csv(DATA_BALANCESHEET, sep = ';')
 df_balancesheet_cleaned= clean_balancesheet(df_balancesheet)
 df_balancesheet_cleaned_notnull = df_balancesheet_cleaned.style.highlight_null(props="color: transparent;")
