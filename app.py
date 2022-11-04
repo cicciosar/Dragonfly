@@ -25,11 +25,11 @@ st.latex(r'''
     A_{n}=f(A_{n-1},c_{n}
 
     where:
-    \begin{conditions}
+
      P     & =       &  notional permeability factor \\
      N     & \sim    &  number of waves \\
      S_{d} & \propto & damage level
-    \end{conditions}
+
     ''')
 
 
