@@ -26,9 +26,9 @@ st.latex(r'''
 
     where:
 
-     P     & =       &  notional permeability factor \\
-     N     & \sim    &  number of waves \\
-     S_{d} & \propto & damage level
+     P     & =       &  notional permeability factor 
+     N     & sim    &  number of waves 
+     S_{d} & propto & damage level
 
     ''')
 
