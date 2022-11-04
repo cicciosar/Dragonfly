@@ -21,14 +21,15 @@ st.write("The model allows to compute the default boundary level based on book v
 
 st.write("Mathematically speaking, we introduce in the call payoff defining the value of the Equity with the presence of the liquidity shortage, the stochastic liquidity process and the stochastic debt process.")
 st.latex(r'''
-    A_{n}=f(A_{n-1},c_{n})
+    \begin{equation}
+    A_{n}=f(A_{n-1},c_{n}
+    \end{equation}
     where:
-    \begin{conditions*}
-    P    &  notional permeability factor and something 
-          longer that needs to be taken at the next line\\
-    N    &  number of waves \\
-    S_{d} &  damage level
-\end{conditions*}
+    \begin{conditions}
+     P     & =       &  notional permeability factor \\
+     N     & \sim    &  number of waves \\
+     S_{d} & \propto & damage level
+    \end{conditions}
 
     ''')
 
