@@ -27,8 +27,18 @@ st.write(r"""
 where:
 - An = vector representing the value of the balance sheet at time n;
 - cn = vector of financial/economic transactions;
-- f (.)= linear affine function in both arguments.
+- f (.) = linear affine function in both arguments.
 """)
+st.latex(r'''
+\left\{\begin{matrix}
+L_{n} = L_{n-1} +\bar{n}_{n}*(T_{n-1}+Z_{n}) &  &  &  &  & \\ 
+ &  &  &  &  & \\ 
+ &  &  &  &  & \\ 
+ &  &  &  &  & \\ 
+ &  &  &  &  & \\ 
+ &  &  &  &  & 
+\end{matrix}\right.
+''')
 
 df_balancesheet = pd.read_csv(DATA_BALANCESHEET, sep = ';')
 df_balancesheet_cleaned= clean_balancesheet(df_balancesheet)
