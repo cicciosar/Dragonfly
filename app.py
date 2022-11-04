@@ -23,11 +23,11 @@ st.write("Mathematically speaking, we introduce in the call payoff defining the 
 st.latex(r'''
 
 A_{n}=f(A_{n-1},c_{n}
-\\where:
+where:
 
- \\P    &  notional permeability factor and something 
-          longer that needs to be taken at the next line\\
-N     &  number of waves \\
+ P    &  notional permeability factor and something 
+          longer that needs to be taken at the next line
+N     &  number of waves 
 S_{d} &  damage level
 
 
